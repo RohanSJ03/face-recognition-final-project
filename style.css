@@ -1,0 +1,125 @@
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    margin-top: 0;
+}
+
+/* General Button Styling */
+button, .back-btn, .primary-btn, .danger-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    color: rgb(207, 32, 32);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for lifted effect */
+}
+
+button:hover, .back-btn:hover, .primary-btn:hover, .danger-btn:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Specific Button Styles */
+.primary-btn {
+    background-color: #007BFF;
+    border-color: #0056b3;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+.danger-btn {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+
+.danger-btn:hover {
+    background-color: #c82333;
+}
+
+.back-btn {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+button:focus, .back-btn:focus, .primary-btn:focus, .danger-btn:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Table styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Status message styling */
+.status-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.status-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.status-info {
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
